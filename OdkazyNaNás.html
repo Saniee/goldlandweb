@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gold-Land : Odkazy na Nás</title>
+    <link rel="icon" type="image/png" href="images/Favicon.png" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/skel.min.js"></script>
+    <script src="js/skel-layers.min.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+      var url = 'https://api.minetools.eu/ping/play.gold-land.eu';
+      $.getJSON(url, function (r) {
+        if (r.error) {
+          document.getElementById('PlayersMaxMin').innerHTML = 'Server Offline';
+          return false;
+        }
+        document.getElementById(
+          'PlayersMaxMin'
+        ).innerHTML = `${r.players.online}/${r.players.max}`;
+        // document.getElementById(
+        //   'PlayersOnServer'
+        // ).innerHTML = `${r.players.sample}`;
+      });
+    </script>
+    <noscript>
+      <link rel="stylesheet" href="css/skel.css" />
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/style-xlarge.css" />
+    </noscript>
+  </head>
+  <body id="top">
+    <!-- Header -->
+    <header id="header" class="skel-layers-fixed">
+      <h1><a href="index">Gold-Land</a></h1>
+      <nav id="nav">
+        <ul>
+          <li><a href="index">Domov</a></li>
+          <li><a href="pravidla">Pravidla</a></li>
+          <li>Odkazy na Nás</li>
+          <li><a href="nabory">Nábory</a></li>
+          <li><a href="youtuber">Youtuber</a></li>
+          <li><a href="hlasovanie">Hlasovanie</a></li>
+          <li><a href="vip">Vip</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main -->
+    <section id="odkazynanás">
+      <div>
+        <div>
+          <h2>TS3</h2>
+        </div>
+        <br />
+        <section>
+          <p style="color: white;">ts3.gold-land.eu</p>
+        </section>
+      </div>
+      <br />
+      <div>
+        <div>
+          <h2>Minecraft Server</h2>
+        </div>
+        <br />
+        <section>
+          <p style="color: white;">play.gold-land.eu</p>
+          <p id="PlayersMaxMin" style="color: white;"></p>
+          <p id="PlayersOnServer" style="color: white;"></p>
+        </section>
+      </div>
+    </section>
+
+    <br />
+    <div>
+      <div>
+        <div>
+          <h2 style="text-align: center;">
+            <a target="_blank" href="https://discord.gg/NVnnQtH">Discord</a>
+          </h2>
+        </div>
+        <br />
+      </div>
+      <div style="position: relative; text-align: center;">
+        <p>
+          <iframe
+            src="https://discordapp.com/widget?id=725455905960886308&theme=dark"
+            width="350"
+            height="500"
+            allowtransparency="true"
+            frameborder="0"
+            sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+          ></iframe>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <!-- 				<div class="align-center">
+					<div>
+						<h2>Socialne Siete</h2>
+						<p></p>
+						<ul class="icons">
+							<li><a target="_blank" href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a target="_blank" href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						</ul>
+					</div>
+				</div> -->
+      <ul class="copyright">
+        <li>&copy; GoldLand. All rights reserved.</li>
+        <li>
+          Design: <a target="_blank" href="http://saniee.rf.gd">Saniee</a>
+        </li>
+        <li>Images: <a>Server</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

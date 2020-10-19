@@ -11,7 +11,7 @@
 /* Basic */
 
 	body {
-		background: #f8f8f8;
+		background: orange;
 	}
 
 	body, input, select, textarea {
@@ -155,7 +155,7 @@
 	}
 
 	header p {
-		color: #bbb;
+		color: rgb(110, 105, 105);
 		position: relative;
 		margin: 0 0 1.5em 0;
 	}
@@ -882,7 +882,7 @@
 	}
 
 	#header {
-		background: #fff;
+		background: orange;
 		color: #555f66;
 		cursor: default;
 		height: 3em;
@@ -1412,7 +1412,7 @@
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	color: #d8d8d8;
+	color: orangered;
 	padding: 14em 0;
 	text-align: center;
 	position: relative;
@@ -1483,7 +1483,7 @@
 /* Footer */
 
 	#footer {
-		background: #f8f8f8;
+		background: orange;
 		padding: 4em 0 6em 0;
 	}
 
@@ -1492,7 +1492,7 @@
 		}
 
 		#footer .copyright {
-			color: #88A000;
+			color: black;
 			font-size: 0.9em;
 			margin: 2em 0 0 0;
 			padding: 0;

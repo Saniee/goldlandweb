@@ -10,6 +10,22 @@
 
 /* Basic */
 
+	::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	::-webkit-scrollbar-track {
+		background: whitesmoke;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background: goldenrod;
+	}
+
+	::-webkit-scrollbar-thumb:hover {
+		background-color: gold;
+	}
+
 	body {
 		background:	#232d33;
 	}

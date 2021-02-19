@@ -11,6 +11,20 @@
     <script src="js/skel.min.js"></script>
     <script src="js/skel-layers.min.js"></script>
     <script src="js/init.js"></script>
+    <script src="https://mcapi.us/scripts/minecraft.js"></script>
+		<script>
+			MinecraftAPI.getServerQuery('play.gold-land.eu', {
+			  port: 27958 // optional, only if you need a custom port
+			}, function (err, status) {
+			  if (err) {
+				return document.querySelector('.server-online').innerHTML = 'Error loading status';
+			  }
+	  
+			  // you can change these to your own message!
+			  document.querySelector('.server-online').innerHTML = status.online ? 'online' : 'offline';
+			  document.querySelector('.players').innerHTML = `${status.players.now}/${status.players.max}`
+			});
+		</script>
     <script>
       var url = 'https://api.minetools.eu/ping/play.gold-land.eu';
       $.getJSON(url, function (r) {
@@ -55,23 +69,28 @@
     <section id="odkazynanás">
       <div>
         <div>
-          <h2>TS3</h2>
+          <h2>Instagram</h2>
         </div>
-        <br />
         <section>
-          <p style="color: white;">ts3.gold-land.eu</p>
+          <a href="https://instagram.com/goldlandcz" target="_blank"><button class="button">Klikny Pre Odkaz.</button></a>
         </section>
       </div>
-      <br />
+      <br>
+      <div>
+        <div>
+          <h2>TS3</h2>
+        <section>
+          <p style="color: white; font-weight: bold;">Pracuje sa na tom.</p>
+        </section>
+      </div>
       <div>
         <div>
           <h2>Minecraft Server</h2>
         </div>
-        <br />
         <section>
           <p style="color: white;">play.gold-land.eu</p>
-          <p id="PlayersMaxMin" style="color: white;"></p>
-          <p id="PlayersOnServer" style="color: white;"></p>
+          <a style="color: white;">Server je <span style="font-weight: bold;" class="server-online"></span>!</a>
+					<a style="color: white;"> <br> Na servery je <span style="font-weight: bold;" class="players"></span> hráčov!</a>
         </section>
       </div>
     </section>
@@ -115,7 +134,7 @@
       <ul class="copyright">
         <li>&copy; GoldLand. All rights reserved.</li>
         <li>
-          Design: <a target="_blank" href="http://saniee.rf.gd">Saniee</a>
+          Design: <a target="_blank" href="https://saniee.rf.gd">Saniee</a>
         </li>
         <li>Images: <a>Server</a></li>
       </ul>

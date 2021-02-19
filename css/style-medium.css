@@ -50,7 +50,6 @@
 	}
 
 		#navButton .toggle:before {
-			content: "";
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
 			font-family: FontAwesome;

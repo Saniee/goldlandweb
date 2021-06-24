@@ -12,19 +12,20 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="https://mcapi.us/scripts/minecraft.js"></script>
-		<script>
+<!-- 		<script>
 			MinecraftAPI.getServerQuery('play.gold-land.eu', {
 			  port: 27958 // optional, only if you need a custom port
 			}, function (err, status) {
 			  if (err) {
-				return document.querySelector('.server-online').innerHTML = 'Error loading status';
+				return document.querySelector('.server-online').innerHTML = 'Status Uknownn';
+				return document.querySelector('.players').innerHTML = 'Player Numbers Unknown';
 			  }
 	  
 			  // you can change these to your own message!
 			  document.querySelector('.server-online').innerHTML = status.online ? 'online' : 'offline';
-			  document.querySelector('.players').innerHTML = `${status.players.now}/${status.players.max}`
+			  document.querySelector('.players').innerHTML = `${status.players.now}/${status.players.max}`;
 			});
-		</script>
+		</script> -->
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -60,8 +61,8 @@
 				<div class="inner">
 					<h2>GoldLand</h2>
 					<p><a>Minecraft Server Plný Zábavy!</a></p>
-					<a style="color: white;">Server je <span style="font-weight: bold;" class="server-online"></span>!</a>
-					<a style="color: white;"> <br> Na servery je <span style="font-weight: bold;" class="players"></span> hráčov!</a>
+<!-- 					<a style="color: white;">Server je <span style="font-weight: bold;" class="server-online"></span>!</a>
+					<a style="color: white;"> <br> Na servery je <span style="font-weight: bold;" class="players"></span> hráčov!</a> -->
 
 <!-- 					<ul class="actions">
 						<li><a href="#" class="button big alt">Info</a></li>
